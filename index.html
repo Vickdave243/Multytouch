@@ -786,6 +786,7 @@
 <li><a href="#home" onclick="showPage('home')" class="nav-link active">Home</a></li>
 <li><a href="#about" onclick="showPage('about')" class="nav-link">About</a></li>
 <li><a href="#services" onclick="showPage('services')" class="nav-link">Services</a></li>
+<li><a href="#careers" onclick="showPage('careers')" class="nav-link">Careers</a></li>   
 <li><a href="#contact" onclick="showPage('contact')" class="nav-link">Contact</a></li>
 </ul>
 <div class="hamburger" onclick="toggleMenu()">
@@ -948,7 +949,657 @@
                 <a href="#" onclick="showPage('contact')" class="cta-button">Get Started Today</a>
             </div>
         </div>
+     <!-- Careers Page -->
+       <div id="careers" class="page">
 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers | Multytouch</title>
+    <link rel="icon" type="image/png" href="../Downloads/MT.png" sizes="35x35">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: linear-gradient(to bottom, #4c069c 15%, #667eea 85%);
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Navigation */
+        .navbar {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            margin: 20px auto;
+            padding: 15px 30px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1000;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: inline-block;
+            height: 50px;
+            cursor: pointer;
+        }
+
+        .logo:hover {
+            opacity: 0.8;
+        }
+
+        .logo img {
+            height: 100%;
+            width: auto;
+            max-height: 50px;
+            object-fit: contain;
+            display: block;
+            pointer-events: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: white;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        /* Hero Section */
+        .careers-hero {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            margin: 40px auto;
+            padding: 80px 40px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .careers-hero h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .careers-hero .tagline {
+            font-size: 1.8rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .careers-hero p {
+            font-size: 1.25rem;
+            color: rgba(255, 255, 255, 0.8);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Why Work With Us Section */
+        .why-work-section {
+            background: #e7e2fc;
+            border-radius: 20px;
+            padding: 60px 40px;
+            margin: 60px 0;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+
+        .why-work-section h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2f1c6a;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .why-work-intro {
+            font-size: 1.1rem;
+            color: #555;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 50px;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .value-card {
+            background: #f8f9ff;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            border: 1px solid #e0e7ff;
+            transition: all 0.3s ease;
+        }
+
+        .value-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .value-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .value-card h4 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #2f1c6a;
+            margin-bottom: 15px;
+        }
+
+        .value-card p {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        /* Benefits Section */
+        .benefits-section {
+            background: linear-gradient(to top, #4c069c);
+            border-radius: 20px;
+            padding: 60px 40px;
+            margin: 60px 0;
+            color: white;
+        }
+
+        .benefits-section h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .benefit-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .benefit-icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .benefit-card h4 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: white;
+        }
+
+        .benefit-card p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1rem;
+        }
+
+        /* Open Positions Section */
+        .positions-section {
+            background: #e7e2fc;
+            border-radius: 20px;
+            padding: 60px 40px;
+            margin: 60px 0;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+
+        .positions-section h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2f1c6a;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .job-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+        }
+
+        .job-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .job-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2f1c6a;
+            margin-bottom: 5px;
+        }
+
+        .job-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .job-meta span {
+            background: #f0f0f0;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+
+        .job-description {
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .job-requirements h5 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #2f1c6a;
+            margin-bottom: 10px;
+        }
+
+        .job-requirements ul {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        .job-requirements li {
+            color: #555;
+            margin-bottom: 5px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .job-requirements li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .apply-btn {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+            display: inline-block;
+        }
+
+        .apply-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 30px rgba(102, 126, 234, 0.4);
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .careers-hero {
+                padding: 40px 30px;
+            }
+
+            .careers-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .careers-hero .tagline {
+                font-size: 1.3rem;
+            }
+
+            .why-work-section,
+            .benefits-section,
+            .positions-section {
+                padding: 40px 25px;
+            }
+
+            .values-grid,
+            .benefits-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .job-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .job-meta {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+        }
+
+        /* Animation Styles */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-content">
+                <a href="#" class="logo">
+                    <img src="../Downloads/LOGO/MT-LOGO-ORIGINAL PNG-SVG/MT-LOGO-ORIGINAL-02.png" alt="Multytouch Logo">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#" class="active">Careers</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <div class="careers-hero fade-in">
+            <h1>Join Our Team</h1>
+            <p class="tagline">Shape the Future of Business Support</p>
+            <p>Be part of a dynamic team that's transforming how businesses handle their support operations. We're looking for passionate professionals who share our commitment to excellence and innovation.</p>
+        </div>
+
+        <!-- Why Work With Us Section -->
+        <div class="why-work-section fade-in">
+            <h2>Why Work With Us</h2>
+            <p class="why-work-intro">At Multytouch, we believe that great support starts with a great team. We've built a culture that values growth, collaboration, and making a real impact for our clients.</p>
+            
+            <div class="values-grid">
+                <div class="value-card fade-in">
+                    <span class="value-icon">🚀</span>
+                    <h4>Growth Mindset</h4>
+                    <p>We invest in your professional development with continuous learning opportunities, mentorship programs, and career advancement paths.</p>
+                </div>
+                <div class="value-card fade-in">
+                    <span class="value-icon">🤝</span>
+                    <h4>Collaborative Environment</h4>
+                    <p>Work alongside talented professionals who share knowledge, support each other, and celebrate collective achievements.</p>
+                </div>
+                <div class="value-card fade-in">
+                    <span class="value-icon">💡</span>
+                    <h4>Innovation Focus</h4>
+                    <p>Be part of a team that constantly seeks better ways to serve our clients and improve business support processes.</p>
+                </div>
+                <div class="value-card fade-in">
+                    <span class="value-icon">🎯</span>
+                    <h4>Purpose-Driven Work</h4>
+                    <p>Make a meaningful impact by helping businesses grow and succeed through exceptional support services.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Benefits Section -->
+        <div class="benefits-section fade-in">
+            <h2>Benefits & Perks</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card fade-in">
+                    <span class="benefit-icon">💰</span>
+                    <h4>Competitive Compensation</h4>
+                    <p>Attractive salary packages with performance-based bonuses and regular reviews.</p>
+                </div>
+                <div class="benefit-card fade-in">
+                    <span class="benefit-icon">🏠</span>
+                    <h4>Remote Flexibility</h4>
+                    <p>Flexible work arrangements with remote work options and flexible scheduling.</p>
+                </div>
+                <div class="benefit-card fade-in">
+                    <span class="benefit-icon">📚</span>
+                    <h4>Learning Budget</h4>
+                    <p>Annual learning and development budget for courses, certifications, and conferences.</p>
+                </div>
+                <div class="benefit-card fade-in">
+                    <span class="benefit-icon">⚖️</span>
+                    <h4>Work-Life Balance</h4>
+                    <p>Generous time off policy and emphasis on maintaining healthy work-life integration.</p>
+                </div>
+                <div class="benefit-card fade-in">
+                    <span class="benefit-icon">🌟</span>
+                    <h4>Recognition Programs</h4>
+                    <p>Regular recognition and reward programs celebrating outstanding performance and achievements.</p>
+                </div>
+                <div class="benefit-card fade-in">
+                    <span class="benefit-icon">🎉</span>
+                    <h4>Team Events</h4>
+                    <p>Regular team building activities, company events, and celebration of milestones.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Open Positions Section -->
+        <div class="positions-section fade-in">
+            <h2>Open Positions</h2>
+            
+            <div class="job-card fade-in">
+                <div class="job-header">
+                    <div>
+                        <h3 class="job-title">Customer Support Specialist</h3>
+                        <div class="job-meta">
+                            <span>Customer Success</span>
+                            <span>Full-time</span>
+                            <span>Remote</span>
+                            <span>Entry Level</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="job-description">Join our customer success team to provide exceptional support experiences. You'll be the first point of contact for our clients' customers, ensuring every interaction reflects our commitment to excellence.</p>
+                <div class="job-requirements">
+                    <h5>Key Requirements:</h5>
+                    <ul>
+                        <li>2+ years of customer service experience</li>
+                        <li>Excellent written and verbal communication skills</li>
+                        <li>Experience with support ticketing systems</li>
+                        <li>Strong problem-solving abilities</li>
+                        <li>Ability to work flexible hours across time zones</li>
+                    </ul>
+                </div>
+                <a href="#" class="apply-btn" onclick="showApplicationForm('Customer Support Specialist')">Apply Now</a>
+            </div>
+
+            <div class="job-card fade-in">
+                <div class="job-header">
+                    <div>
+                        <h3 class="job-title">Technical Support Engineer</h3>
+                        <div class="job-meta">
+                            <span>Technical Operations</span>
+                            <span>Full-time</span>
+                            <span>Remote</span>
+                            <span>Mid Level</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="job-description">Provide technical expertise and troubleshooting support across various platforms and systems. Help our clients' users navigate complex technical challenges with confidence.</p>
+                <div class="job-requirements">
+                    <h5>Key Requirements:</h5>
+                    <ul>
+                        <li>3+ years of technical support experience</li>
+                        <li>Strong knowledge of web technologies and software systems</li>
+                        <li>Experience with troubleshooting methodologies</li>
+                        <li>Familiarity with various operating systems</li>
+                        <li>Excellent documentation and communication skills</li>
+                    </ul>
+                </div>
+                <a href="#" class="apply-btn" onclick="showApplicationForm('Technical Support Engineer')">Apply Now</a>
+            </div>
+
+            <div class="job-card fade-in">
+                <div class="job-header">
+                    <div>
+                        <h3 class="job-title">Support Team Lead</h3>
+                        <div class="job-meta">
+                            <span>Operations</span>
+                            <span>Full-time</span>
+                            <span>Remote</span>
+                            <span>Senior Level</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="job-description">Lead and mentor a team of support professionals while ensuring exceptional service delivery. Drive process improvements and maintain the highest quality standards.</p>
+                <div class="job-requirements">
+                    <h5>Key Requirements:</h5>
+                    <ul>
+                        <li>5+ years of support experience with 2+ years in leadership</li>
+                        <li>Strong team management and mentoring skills</li>
+                        <li>Experience with support metrics and quality assurance</li>
+                        <li>Process improvement and optimization experience</li>
+                        <li>Excellent analytical and strategic thinking abilities</li>
+                    </ul>
+                </div>
+                <a href="#" class="apply-btn" onclick="showApplicationForm('Support Team Lead')">Apply Now</a>
+            </div>
+
+            <div class="job-card fade-in">
+                <div class="job-header">
+                    <div>
+                        <h3 class="job-title">Business Development Representative</h3>
+                        <div class="job-meta">
+                            <span>Sales</span>
+                            <span>Full-time</span>
+                            <span>Remote</span>
+                            <span>Mid Level</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="job-description">Drive business growth by identifying and developing new client relationships. Help businesses discover how our support solutions can accelerate their success.</p>
+                <div class="job-requirements">
+                    <h5>Key Requirements:</h5>
+                    <ul>
+                        <li>3+ years of B2B sales or business development experience</li>
+                        <li>Strong relationship building and communication skills</li>
+                        <li>Experience with CRM systems and sales processes</li>
+                        <li>Understanding of business support services</li>
+                        <li>Self-motivated with strong organizational skills</li>
+                    </ul>
+                </div>
+                <a href="#" class="apply-btn" onclick="showApplicationForm('Business Development Representative')">Apply Now</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all elements with fade-in class
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Application form function
+        function showApplicationForm(position) {
+            alert(`Thank you for your interest in the ${position} position! Please send your resume and cover letter to careers@multytouch.com with the position title in the subject line.`);
+        }
+
+        // Add hover effects
+        document.querySelectorAll('.job-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.borderLeft = '4px solid #667eea';
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.borderLeft = 'none';
+            });
+        });
+    </script>
+</body>
+</html>
+
+       </div>   
+
+    
         <!-- Contact Page -->
         <div id="contact" class="page">
             <div class="contact-hero">
