@@ -720,14 +720,15 @@
     }
 
     .nav-links.active {
-        display: flex !important;
+        display: flex;
     }
 
     .hamburger {
-        display: flex !important;
+        display: flex;
         z-index: 1002;
-        position: relative; 
+        position: relative;
     }
+}
     
     .nav-links li {
         margin: 10px 0;
@@ -807,21 +808,23 @@
  <div class="container">
 <!-- Navigation -->
 <nav class="navbar">
-<div class="nav-content">
-<a href="#" class="logo" onclick="showPage('home', this)"><img src="../Downloads/LOGO/MT-LOGO-ORIGINAL PNG-SVG/MT-LOGO-ORIGINAL-02.png" alt="Logo"></a>
-<ul class="nav-links">
-<li><a href="#" onclick="showPage('home', this)" class="nav-link active">Home</a></li>
-<li><a href="#" onclick="showPage('about', this)" class="nav-link">About</a></li>
-<li><a href="#" onclick="showPage('services', this)" class="nav-link">Services</a></li>
-<li><a href="#" onclick="showPage('careers', this)" class="nav-link">Careers</a></li>
-<li><a href="#" onclick="showPage('contact', this)" class="nav-link">Contact</a></li>
-</ul>
-<div class="hamburger" onclick="toggleMenu()">
-<span></span>
-<span></span>
-<span></span>
-</div>
-</div>
+    <div class="nav-content">
+        <a href="#" class="logo" onclick="showPage('home')">
+            <img src="../Downloads/LOGO/MT-LOGO-ORIGINAL PNG-SVG/MT-LOGO-ORIGINAL-02.png" alt="Logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="#" onclick="showPage('home')" class="nav-link active">Home</a></li>
+            <li><a href="#" onclick="showPage('about')" class="nav-link">About</a></li>
+            <li><a href="#" onclick="showPage('services')" class="nav-link">Services</a></li>
+            <li><a href="#" onclick="showPage('careers')" class="nav-link">Careers</a></li>
+            <li><a href="#" onclick="showPage('contact')" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
 </nav>
 
         <!-- Home Page -->
@@ -1689,8 +1692,8 @@
                 navLinks.classList.remove('active');
             }
         });
-</script>
-        // Navigation functionality
+
+         // Navigation functionality
     function showPage(pageId) {
     // Hide all pages
     const pages = document.querySelectorAll('.page');
@@ -1800,6 +1803,8 @@ window.addEventListener('load', function() {
                 navLinks.classList.remove('active');
             }
         });
+</script>
+       
     </script>
 </body>
 </html>
