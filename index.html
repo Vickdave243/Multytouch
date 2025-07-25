@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multytouch | Business Support</title>
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico"> <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png"> <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png"> <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
     <style>
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico"> <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png"> <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png"> <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
-    <style>        * {
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -18,8 +17,8 @@
             line-height: 1.6;
             color: #1a1a1a;
             background: linear-gradient(to bottom, #4c069c 15%, #667eea 85%);
-  background-attachment: fixed;
-  min-height: 100vh;
+            background-attachment: fixed;
+            min-height: 100vh;
         }
 
         .container {
@@ -37,7 +36,7 @@
             padding: 15px 30px;
             border: 1px solid rgba(255, 255, 255, 0.2);
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            position:relative;
+            position: relative;
             z-index: 1000;
         }
 
@@ -48,29 +47,17 @@
         }
 
         .logo {
-             display: inline-block;
-  height: 50px;
-  cursor: pointer;
-}
+            display: inline-block;
+            height: 50px;
+            cursor: pointer;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+        }
 
-.logo:hover {
-  opacity: 0.8;
-}
-
-.logo img {
-  height: 100%;
-  width: auto;
-  max-height: 50px;
-  object-fit: contain;
-  display: block;
-  pointer-events: auto;
-}
-
-.nav-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
+        .logo:hover {
+            opacity: 0.8;
         }
 
         .nav-links {
@@ -105,9 +92,6 @@
             background: white;
             margin: 3px 0;
             transition: 0.3s;
-
-
-            
         }
 
         /* Page Content */
@@ -166,6 +150,7 @@
             transition: all 0.3s ease;
             box-shadow: 0 15px 30px rgba(102, 126, 234, 0.3);
             margin: 0 10px;
+            cursor: pointer;
         }
 
         .cta-button:hover {
@@ -221,10 +206,8 @@
         .feature-card h3 {
             font-size: 1.5rem;
             font-weight: 600;
-            color:#2f1c6a;
+            color: #2f1c6a;
             margin-bottom: 15px;
-           
-
         }
 
         .feature-card p {
@@ -251,7 +234,7 @@
         .about-section h3 {
             font-size: 1.8rem;
             font-weight: 600;
-            color:#2f1c6a;
+            color: #2f1c6a;
             margin: 30px 0 15px;
         }
 
@@ -261,87 +244,45 @@
             margin-bottom: 20px;
         }
 
-       .mission-section {
-    background: #4c069c;
-    color: white;
-    border-radius: 20px;
-    padding: 40px;
-    margin: 30px 0;
-    border-left: 5px solid #667eea;
-}
+        .mission-section {
+            background: #4c069c;
+            color: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin: 30px 0;
+            border-left: 5px solid #667eea;
+        }
 
-.mission-section p {
-    color: white;
-    margin-bottom: 15px; /* Add this line */
-}
+        .mission-section p {
+            color: white;
+            margin-bottom: 15px;
+        }
 
         .mission-section h3 {
             color: white; 
         }
 
-        .mission-section p {
+        .commitment-list {
+            list-style: none;
+            margin: 0;
+            padding-left: 0;
+        }
+
+        .commitment-list li {
             color: white;
+            margin-bottom: 8px;
+            padding-left: 0;
+            position: relative;
+            display: flex;
+            align-items: flex-start;
         }
 
-        .mission-section ul {
-            color: white;
-
-        }
-
-        .mission-section li {
-            color: white;
-        }
-
-  .commitment-list {
-    list-style: none;
-    margin: 0;
-    padding-left: 0;
-}
-
-.commitment-list li {
-    color: white;
-    margin-bottom: 8px;
-    padding-left: 0;
-    position: relative;
-    display: flex;
-    align-items: flex-start;
-}
-
-.commitment-list li::before {
-    content: '✓';
-    color: #667eea;
-    font-weight: bold;
-    margin-right: 10px;
-    flex-shrink: 0;
-}
-}
-
-        .values-grid {
-            display: grid;
-            color:white;
-            grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin: 40px 0;
-        }
-
-        .value-item {
-            background: #f8f9ff;
-            border-radius: 15px;
-            padding: 30px;
-            text-align: center;
-            border: 1px solid #e0e7ff;
-        }
-
-        .value-item h4 {
-            font-size: 1.3rem;
-            font-weight: 600;
-            color: white;
-            margin-bottom: 15px;
-        }
-
-        .value-item p {
-            color: white;
-            font-size: 1rem;
+        .commitment-list li::before {
+            content: '✓';
+            color: #667eea;
+            font-weight: bold;
+            margin-right: 10px;
+            flex-shrink: 0;
         }
 
         /* Services Page Styles */
@@ -394,28 +335,28 @@
         .service-card h3 {
             font-size: 1.5rem;
             font-weight: 600;
-            color:#2f1c6a;
+            color: #2f1c6a;
             margin-bottom: 15px;
         }
 
         .service-card p {
             color: #666;
-            margin-bottom: 0px;
+            margin-bottom: 20px;
         }
 
- .service-features {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
+        .service-features {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
 
-.service-features li {
-    color: #555;
-    margin-bottom: 8px;
-    padding-left: 20px;
-    position: relative;
-    margin-left: 0;
-}
+        .service-features li {
+            color: #555;
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+            margin-left: 0;
+        }
 
         .service-features li::before {
             content: '✓';
@@ -437,7 +378,7 @@
             text-align: center;
             font-size: 2.5rem;
             font-weight: 700;
-            color:#2f1c6a;
+            color: #2f1c6a;
             margin-bottom: 40px;
         }
 
@@ -469,7 +410,7 @@
         .benefit-item h4 {
             font-size: 1.25rem;
             font-weight: 600;
-            color:#2f1c6a;
+            color: #2f1c6a;
             margin-bottom: 10px;
         }
 
@@ -479,7 +420,7 @@
         }
 
         .cta-section {
-            background: linear-gradient(to top,#4c069c);
+            background: linear-gradient(to top, #4c069c);
             border-radius: 20px;
             padding: 60px 40px;
             text-align: center;
@@ -497,6 +438,141 @@
             font-size: 1.1rem;
             margin-bottom: 30px;
             opacity: 0.9;
+        }
+
+        /* Careers Page Styles */
+        .careers-hero {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            margin: 40px auto;
+            padding: 60px 40px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            
+        }
+
+        .careers-hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .careers-hero p {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .job-card {
+            background: #e7e2fc;
+            border-radius: 20px;
+            padding: 40px;
+            margin: 30px 0;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .job-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+        }
+
+        .job-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .job-title h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2f1c6a;
+            margin-bottom: 10px;
+        }
+
+        .job-meta {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .job-meta span {
+            background: #4c069c;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .job-requirements {
+            margin: 20px 0;
+        }
+
+        .job-requirements h4 {
+            color: #2f1c6a;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .job-requirements ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .job-requirements li {
+            color: #555;
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .job-requirements li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .apply-btn {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .apply-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
         }
 
         /* Contact Page Styles */
@@ -543,7 +619,7 @@
         .contact-form h2 {
             font-size: 2rem;
             font-weight: 700;
-            color:#2f1c6a;
+            color: #2f1c6a;
             margin-bottom: 30px;
             text-align: center;
         }
@@ -559,17 +635,17 @@
             font-weight: 500;
             font-size: 1rem;
         }
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 15px;
-    border: 2px solid #e0e7ff;
-    border-radius: 10px;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-    background: #f8f9ff;
-    box-sizing: border-box;
-}
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #e0e7ff;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background: #f8f9ff;
+            box-sizing: border-box;
         }
 
         .form-group input:focus,
@@ -613,7 +689,7 @@
         .contact-info h2 {
             font-size: 2rem;
             font-weight: 700;
-            color:#2f1c6a;
+            color: #2f1c6a;
             margin-bottom: 30px;
             text-align: center;
         }
@@ -665,16 +741,16 @@
             color: #764ba2;
         }
 
-      .why-contact {
-    background: linear-gradient(to top, #4c069c);
-    border-radius: 20px;
-    padding: 40px;
-    margin: 40px 0;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    grid-column: 1 / -1;
-    box-sizing: border-box;
-}
+        .why-contact {
+            background: linear-gradient(to top, #4c069c);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 40px 0;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            grid-column: 1 / -1;
+            box-sizing: border-box;
+        }
 
         .why-contact h2 {
             font-size: 2rem;
@@ -699,52 +775,230 @@
             margin-bottom: 20px;
             border: 1px solid #c3e6cb;
         }
+/* Why Work With Us Section */
+.why-work-section {
+    background: #e7e2fc;
+    border-radius: 20px;
+    padding: 60px 40px;
+    margin: 40px 0;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
 
-        /* Mobile Responsiveness */
+.why-work-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2f1c6a;
+    margin-bottom: 20px;
+}
+
+.why-work-intro {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.value-card {
+    background: #f8f9ff;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid #e0e7ff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.value-icon {
+    font-size: 48px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.value-card h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2f1c6a;
+    margin-bottom: 15px;
+}
+
+.value-card p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Benefits Section */
+.benefits-section {
+    background: #e7e2fc;
+    border-radius: 20px;
+    padding: 60px 40px;
+    margin: 40px 0;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.benefits-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2f1c6a;
+    margin-bottom: 40px;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.benefit-card {
+    background: #f8f9ff;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid #e0e7ff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-icon {
+    font-size: 48px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.benefit-card h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2f1c6a;
+    margin-bottom: 15px;
+}
+
+.benefit-card p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Open Positions Section */
+.positions-section {
+    margin: 60px 0;
+}
+
+.positions-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 40px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Job card improvements for consistency */
+.job-card h5 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2f1c6a;
+    margin-bottom: 10px;
+}
+
+.job-description {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Mobile responsiveness for new sections */
 @media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: rgba(76, 6, 156, 0.95);
-        backdrop-filter: blur(20px);
-        border-radius: 0 0 20px 20px;
-        padding: 20px;
-        margin-top: 10px;
-        z-index: 1001;
-        border: 1px solid rgba(255,255,255,0.2);
-        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    .why-work-section,
+    .benefits-section {
+        padding: 40px 25px;
+        margin: 30px 0;
     }
-
-    .nav-links.active {
-        display: flex;
+    
+    .why-work-section h2,
+    .benefits-section h2 {
+        font-size: 2rem;
     }
-
-    .hamburger {
-        display: flex;
-        z-index: 1002;
-        position: relative;
+    
+    .values-grid,
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .value-card,
+    .benefit-card {
+        padding: 25px;
+    }
+    
+    .positions-section h2 {
+        font-size: 2rem;
     }
 }
-    
-    .nav-links li {
-        margin: 10px 0;
-    }
-    
-    .nav-links a {
-        display: block;
-        padding: 10px;
-        text-align: center;
-        border-radius: 10px;
-        transition: background-color 0.3s ease;
-    }
-    
-    .nav-links a:hover {
-        background: rgba(255,255,255,0.1);
-    }
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(76, 6, 156, 0.95);
+                backdrop-filter: blur(20px);
+                border-radius: 0 0 20px 20px;
+                padding: 20px;
+                margin-top: 10px;
+                z-index: 1001;
+                border: 1px solid rgba(255,255,255,0.2);
+                box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .hamburger {
+                display: flex;
+                z-index: 1002;
+                position: relative;
+            }
+            
+            .nav-links li {
+                margin: 10px 0;
+            }
+            
+            .nav-links a {
+                display: block;
+                padding: 10px;
+                text-align: center;
+                border-radius: 10px;
+                transition: background-color 0.3s ease;
+            }
+            
+            .nav-links a:hover {
+                background: rgba(255,255,255,0.1);
+            }
 
             .hero h1 {
                 font-size: 2.5rem;
@@ -790,52 +1044,63 @@
                 border: 2px solid white;
                 text-align: center;
             }
+
+            .job-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .job-meta {
+                flex-direction: column;
+                align-items: flex-start;
+            }
         }
+        
         .hamburger.active span:nth-child(1) {
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
 
-.hamburger.active span:nth-child(2) {
-    opacity: 0;
-}
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
 
-.hamburger.active span:nth-child(3) {
-    transform: rotate(45deg) translate(-5px, -6px);
-}
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(45deg) translate(-5px, -6px);
+        }
     </style>
 </head>
 <body>
- <div class="container">
-<!-- Navigation -->
-<nav class="navbar">
-    <div class="nav-content">
-        <a href="#" class="logo" onclick="showPage('home')">
-            <img src="../Downloads/LOGO/MT-LOGO-ORIGINAL PNG-SVG/MT-LOGO-ORIGINAL-02.png" alt="Logo">
-        </a>
-        <ul class="nav-links">
-            <li><a href="#" onclick="showPage('home')" class="nav-link active">Home</a></li>
-            <li><a href="#" onclick="showPage('about')" class="nav-link">About</a></li>
-            <li><a href="#" onclick="showPage('services')" class="nav-link">Services</a></li>
-            <li><a href="#" onclick="showPage('careers')" class="nav-link">Careers</a></li>
-            <li><a href="#" onclick="showPage('contact')" class="nav-link">Contact</a></li>
-        </ul>
-        <div class="hamburger" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </div>
-</nav>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-content">
+                <a href="#" class="logo" onclick="showPage('home')">
+                    Multytouch
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#" onclick="showPage('home')" class="nav-link active">Home</a></li>
+                    <li><a href="#" onclick="showPage('about')" class="nav-link">About</a></li>
+                    <li><a href="#" onclick="showPage('services')" class="nav-link">Services</a></li>
+                    <li><a href="#" onclick="showPage('careers')" class="nav-link">Careers</a></li>
+                    <li><a href="#" onclick="showPage('contact')" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
 
         <!-- Home Page -->
         <div id="home" class="page active">
             <div class="hero">
-                <h1></h1>
+                <h1>Multytouch</h1>
                 <p class="tagline">Empowering Growth Through Strategic Support</p>
                 <p>We handle essential support operations that keep your business running smoothly, affording your core team the flexibility to concentrate on strategic initiatives that drive sustainable growth.</p>
                 <div style="margin-top: 40px;">
-                    <a href="#services" onclick="showPage('services')" class="cta-button">Explore Our Services</a>
-                    <a href="#about" onclick="showPage('about')" class="cta-button secondary">Learn More</a>
+                    <a href="#" onclick="showPage('services')" class="cta-button">Explore Our Services</a>
+                    <a href="#" onclick="showPage('about')" class="cta-button secondary">Learn More</a>
                 </div>
             </div>
 
@@ -853,18 +1118,17 @@
                 <div class="feature-card">
                     <div class="feature-icon">📈</div>
                     <h3>Scalable Partnership</h3>
-                    <p>Whether you're a lean startup establishing professional support systems or a growing business scaling operations efficiently, our flexible solutions adapt to your evolving needs and budget.</p>
+                    <p>Whether you're a lean startup establishing professional support systems or a growing business scaling operations efficiently, our tailored solutions adapt to your evolving needs and budget.</p>
                 </div>
             </div>
 
             <div class="cta-section">
                 <h2>Ready to launch your go-to support team?</h2>
                 <p>Let's explore how we can become your trusted support partner and help accelerate your business growth.</p>
-                <a href="#contact" onclick="showPage('contact')" class="cta-button">Get Started Today</a>
+                <a href="#" onclick="showPage('contact')" class="cta-button">Get Started Today</a>
             </div>
         </div>
-
-        <!-- About Page -->
+<!-- About Page -->
         <div id="about" class="page">
             <div class="about-section">
                 <h2>Who we are</h2>
@@ -982,433 +1246,12 @@
      <!-- Careers Page -->
        <div id="careers" class="page">
 
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Careers | Multytouch</title>
-    <link rel="icon" type="image/png" href="../Downloads/MT.png" sizes="35x35">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            color: #1a1a1a;
-            background: linear-gradient(to bottom, #4c069c 15%, #667eea 85%);
-            background-attachment: fixed;
-            min-height: 100vh;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Navigation */
-        .navbar {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(20px);
-            border-radius: 20px;
-            margin: 20px auto;
-            padding: 15px 30px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            position: relative;
-            z-index: 1000;
-        }
-
-        .nav-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            display: inline-block;
-            height: 50px;
-            cursor: pointer;
-        }
-
-        .logo:hover {
-            opacity: 0.8;
-        }
-
-        .logo img {
-            height: 100%;
-            width: auto;
-            max-height: 50px;
-            object-fit: contain;
-            display: block;
-            pointer-events: auto;
-        }
-
-        .nav-links {
-            display: flex;
-            list-style: none;
-            gap: 30px;
-        }
-
-        .nav-links a {
-            color: rgba(255, 255, 255, 0.9);
-            text-decoration: none;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
-
-        .nav-links a:hover,
-        .nav-links a.active {
-            color: white;
-            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-        }
-
-        /* Hero Section */
-        .careers-hero {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(20px);
-            border-radius: 20px;
-            margin: 40px auto;
-            padding: 80px 40px;
-            text-align: center;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-        }
-
-        .careers-hero h1 {
-            font-size: 4rem;
-            font-weight: 700;
-            color: white;
-            margin-bottom: 20px;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-        }
-
-        .careers-hero .tagline {
-            font-size: 1.8rem;
-            color: rgba(255, 255, 255, 0.9);
-            margin-bottom: 30px;
-            font-weight: 600;
-        }
-
-        .careers-hero p {
-            font-size: 1.25rem;
-            color: rgba(255, 255, 255, 0.8);
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
-        /* Why Work With Us Section */
-        .why-work-section {
-            background: #e7e2fc;
-            border-radius: 20px;
-            padding: 60px 40px;
-            margin: 60px 0;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-        }
-
-        .why-work-section h2 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: #2f1c6a;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-
-        .why-work-intro {
-            font-size: 1.1rem;
-            color: #555;
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto 50px;
-        }
-
-        .values-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .value-card {
-            background: #f8f9ff;
-            border-radius: 15px;
-            padding: 30px;
-            text-align: center;
-            border: 1px solid #e0e7ff;
-            transition: all 0.3s ease;
-        }
-
-        .value-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-        }
-
-        .value-icon {
-            font-size: 3rem;
-            margin-bottom: 20px;
-            display: block;
-        }
-
-        .value-card h4 {
-            font-size: 1.3rem;
-            font-weight: 600;
-            color: #2f1c6a;
-            margin-bottom: 15px;
-        }
-
-        .value-card p {
-            color: #666;
-            font-size: 1rem;
-        }
-
-        /* Benefits Section */
-        .benefits-section {
-            background: linear-gradient(to top, #4c069c);
-            border-radius: 20px;
-            padding: 60px 40px;
-            margin: 60px 0;
-            color: white;
-        }
-
-        .benefits-section h2 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 50px;
-            text-align: center;
-        }
-
-        .benefits-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .benefit-card {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 15px;
-            padding: 30px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            transition: all 0.3s ease;
-        }
-
-        .benefit-card:hover {
-            transform: translateY(-5px);
-            background: rgba(255, 255, 255, 0.15);
-        }
-
-        .benefit-icon {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            display: block;
-        }
-
-        .benefit-card h4 {
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin-bottom: 15px;
-            color: white;
-        }
-
-        .benefit-card p {
-            color: rgba(255, 255, 255, 0.9);
-            font-size: 1rem;
-        }
-
-        /* Open Positions Section */
-        .positions-section {
-            background: #e7e2fc;
-            border-radius: 20px;
-            padding: 60px 40px;
-            margin: 60px 0;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-        }
-
-        .positions-section h2 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: #2f1c6a;
-            margin-bottom: 50px;
-            text-align: center;
-        }
-
-        .job-card {
-            background: white;
-            border-radius: 15px;
-            padding: 30px;
-            margin-bottom: 30px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-            transition: all 0.3s ease;
-        }
-
-        .job-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
-        }
-
-        .job-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 20px;
-        }
-
-        .job-title {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #2f1c6a;
-            margin-bottom: 5px;
-        }
-
-        .job-meta {
-            display: flex;
-            gap: 15px;
-            font-size: 0.9rem;
-            color: #666;
-            margin-bottom: 15px;
-        }
-
-        .job-meta span {
-            background: #f0f0f0;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-weight: 500;
-        }
-
-        .job-description {
-            color: #555;
-            margin-bottom: 20px;
-            line-height: 1.6;
-        }
-
-        .job-requirements h5 {
-            font-size: 1rem;
-            font-weight: 600;
-            color: #2f1c6a;
-            margin-bottom: 10px;
-        }
-
-        .job-requirements ul {
-            list-style: none;
-            margin-bottom: 20px;
-        }
-
-        .job-requirements li {
-            color: #555;
-            margin-bottom: 5px;
-            padding-left: 20px;
-            position: relative;
-        }
-
-        .job-requirements li::before {
-            content: '•';
-            position: absolute;
-            left: 0;
-            color: #667eea;
-            font-weight: bold;
-        }
-
-        .apply-btn {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
-            padding: 12px 30px;
-            border: none;
-            border-radius: 25px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
-            display: inline-block;
-        }
-
-        .apply-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 15px 30px rgba(102, 126, 234, 0.4);
-        }
-
-        /* Mobile Responsiveness */
-        @media (max-width: 768px) {
-            .careers-hero {
-                padding: 40px 30px;
-            }
-
-            .careers-hero h1 {
-                font-size: 2.5rem;
-            }
-
-            .careers-hero .tagline {
-                font-size: 1.3rem;
-            }
-
-            .why-work-section,
-            .benefits-section,
-            .positions-section {
-                padding: 40px 25px;
-            }
-
-            .values-grid,
-            .benefits-grid {
-                grid-template-columns: 1fr;
-                gap: 20px;
-            }
-
-            .job-header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .job-meta {
-                flex-wrap: wrap;
-                gap: 10px;
-            }
-
-            .nav-links {
-                display: none;
-            }
-        }
-
-        /* Animation Styles */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease, transform 0.6s ease;
-        }
-
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    </style>
-</head>
-<body>
     <div class="container">
-        <!-- Navigation -->
-        <nav class="navbar">
-            <div class="nav-content">
-                <a href="#" class="logo">
-                    <img src="../Downloads/LOGO/MT-LOGO-ORIGINAL PNG-SVG/MT-LOGO-ORIGINAL-02.png" alt="Multytouch Logo">
-                </a>
-                <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#" class="active">Careers</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-
+   
         <!-- Hero Section -->
         <div class="careers-hero fade-in">
             <h1>Join Our Team</h1>
-            <p class="tagline">Shape the Future of Business Support</p>
+            <p class="tagline">Shape the Future of Business Support.</p>
             <p>Be part of a dynamic team that's transforming how businesses handle their support operations. We're looking for passionate professionals who share our commitment to excellence and innovation.</p>
         </div>
 
@@ -1422,11 +1265,6 @@
                     <span class="value-icon">🚀</span>
                     <h4>Growth Mindset</h4>
                     <p>We invest in your professional development with continuous learning opportunities, mentorship programs, and career advancement paths.</p>
-                </div>
-                <div class="value-card fade-in">
-                    <span class="value-icon">🤝</span>
-                    <h4>Collaborative Environment</h4>
-                    <p>Work alongside talented professionals who share knowledge, support each other, and celebrate collective achievements.</p>
                 </div>
                 <div class="value-card fade-in">
                     <span class="value-icon">💡</span>
@@ -1460,21 +1298,6 @@
                     <h4>Learning Budget</h4>
                     <p>Annual learning and development budget for courses, certifications, and conferences.</p>
                 </div>
-                <div class="benefit-card fade-in">
-                    <span class="benefit-icon">⚖️</span>
-                    <h4>Work-Life Balance</h4>
-                    <p>Generous time off policy and emphasis on maintaining healthy work-life integration.</p>
-                </div>
-                <div class="benefit-card fade-in">
-                    <span class="benefit-icon">🌟</span>
-                    <h4>Recognition Programs</h4>
-                    <p>Regular recognition and reward programs celebrating outstanding performance and achievements.</p>
-                </div>
-                <div class="benefit-card fade-in">
-                    <span class="benefit-icon">🎉</span>
-                    <h4>Team Events</h4>
-                    <p>Regular team building activities, company events, and celebration of milestones.</p>
-                </div>
             </div>
         </div>
 
@@ -1505,7 +1328,7 @@
                         <li>Ability to work flexible hours across time zones</li>
                     </ul>
                 </div>
-                <a href="#" class="apply-btn" onclick="showApplicationForm('Customer Support Specialist')">Apply Now</a>
+                <a href="https://www.linkedin.com/company/multytouch/jobs/" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="showApplicationForm('Customer Support Specialist')">Apply Now</a>
             </div>
 
             <div class="job-card fade-in">
@@ -1531,7 +1354,7 @@
                         <li>Excellent documentation and communication skills</li>
                     </ul>
                 </div>
-                <a href="#" class="apply-btn" onclick="showApplicationForm('Technical Support Engineer')">Apply Now</a>
+                <a href="https://www.linkedin.com/company/multytouch/jobs/" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="showApplicationForm('Technical Support Engineer')">Apply Now</a>
             </div>
 
             <div class="job-card fade-in">
@@ -1557,7 +1380,7 @@
                         <li>Excellent analytical and strategic thinking abilities</li>
                     </ul>
                 </div>
-                <a href="#" class="apply-btn" onclick="showApplicationForm('Support Team Lead')">Apply Now</a>
+                <a href="https://www.linkedin.com/company/multytouch/jobs/" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="showApplicationForm('Support Team Lead')">Apply Now</a>
             </div>
 
             <div class="job-card fade-in">
@@ -1582,229 +1405,129 @@
                         <li>Understanding of business support services</li>
                         <li>Self-motivated with strong organizational skills</li>
                     </ul>
-                </div>
-                <a href="#" class="apply-btn" onclick="showApplicationForm('Business Development Representative')">Apply Now</a>
+                </div>.
+                 <a href="https://www.linkedin.com/company/multytouch/jobs/" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="showApplicationForm('Business Development Representative')">Apply Now</a>
             </div>
         </div>
     </div>
+</div>
 
-    <script>
-       <script>
-        // Fixed Navigation functionality
-        function showPage(pageId, clickedElement) {
-            // Hide all pages
-            const pages = document.querySelectorAll('.page');
-            pages.forEach(page => page.classList.remove('active'));
-            
-            // Show selected page
-            document.getElementById(pageId).classList.add('active');
-            
-            // Update active nav link
-            const navLinks = document.querySelectorAll('.nav-link');
-            navLinks.forEach(link => link.classList.remove('active'));
-            
-            // Add active class to clicked element if provided
-            if (clickedElement) {
-                clickedElement.classList.add('active');
-            }
-            
-            // Close mobile menu if open
-            document.querySelector('.nav-links').classList.remove('active');
-        }
+<!-- Contact Page -->
+<div id="contact" class="page">
+    <div class="contact-hero">
+        <h1>Get In Touch</h1>
+        <p>Ready to transform your support operations? Let's discuss how we can help your business grow.</p>
+    </div>
 
-        function toggleMenu() {
-            const navLinks = document.querySelector('.nav-links');
-            const hamburger = document.querySelector('.hamburger');
-            
-            navLinks.classList.toggle('active');
-            hamburger.classList.toggle('active');
-        }
+    <div class="contact-content">
+        <div class="contact-form">
+            <h2>Send us a message</h2>
+            <div id="successMessage" class="success-message">
+                Thank you for your message! We'll get back to you within 60 minutes.
+            </div>
+            <form onsubmit="submitForm(event)">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required placeholder="Tell us about your support needs..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
 
-        // Add smooth scrolling animation when elements come into view
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <div class="contact-item">
+                <div class="contact-icon">📧</div>
+                <div class="contact-details">
+                    <h3>Email</h3>
+                    <p><a href="mailto:info@multytouch.com">Hello@multytouch.com</a></p>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">📱</div>
+                <div class="contact-details">
+                <a href="https://www.linkedin.com/company/multytouch/" target="_blank" rel="noopener noreferrer"><h3>LinkedIn</a></h3>
+                </div>
+            </div>
+             <div class="contact-item">
+                <div class="contact-icon">💬</div>
+                <div class="contact-details">
+                <h3>WhatsApp</h3>
+                <p><a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">+1 (234) 567-8900</a></p>    
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">⏰</div>
+                <div class="contact-details">
+                    <h3>Response Time</h3>
+                    <p>Guaranteed response in 60 minutes</p>
+                </div>
+            </div>
+        </div>
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
+        <div class="why-contact">
+            <h2>What Next?</h2>
+            <p> Our team will schedule a no-obligation consultation to explore how we can support your growth. We take the time to understand your business operations and the unique challenges you face, then tailor our services to meet your specific needs.</p>
+        </div>
+    </div>
+</div>
+</div>
 
-        // Apply animation to cards
-        document.addEventListener('DOMContentLoaded', function() {
-            document.querySelectorAll('.service-card, .benefit-item, .feature-card, .value-item').forEach(card => {
-                card.style.opacity = '0';
-                card.style.transform = 'translateY(20px)';
-                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-                observer.observe(card);
-            });
-        });
-
-        // Contact form submission
-        function submitForm(event) {
-            event.preventDefault();
-            
-            // Get form data
-            const formData = new FormData(event.target);
-            const name = formData.get('name');
-            const email = formData.get('email');
-            const phone = formData.get('phone');
-            const message = formData.get('message');
-            
-            // Show success message
-            document.getElementById('successMessage').style.display = 'block';
-            
-            // Reset form
-            event.target.reset();
-            
-            // Scroll to success message
-            document.getElementById('successMessage').scrollIntoView({ behavior: 'smooth' });
-            
-            // Hide success message after 5 seconds
-            setTimeout(() => {
-                document.getElementById('successMessage').style.display = 'none';
-            }, 5000);
-        }
-
-        // Add hover effects for interactive elements
-        document.addEventListener('DOMContentLoaded', function() {
-            document.querySelectorAll('.service-card, .feature-card').forEach(card => {
-                card.addEventListener('mouseenter', () => {
-                    card.style.transform = 'translateY(-10px) scale(1.02)';
-                });
-                
-                card.addEventListener('mouseleave', () => {
-                    card.style.transform = 'translateY(0) scale(1)';
-                });
-            });
-        });
-
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', (e) => {
-            const navbar = document.querySelector('.navbar');
-            const navLinks = document.querySelector('.nav-links');
-            if (!navbar.contains(e.target) && navLinks.classList.contains('active')) {
-                navLinks.classList.remove('active');
-            }
-        });
-
-         // Navigation functionality
+<script>
+    // Navigation functionality
     function showPage(pageId) {
-    // Hide all pages
-    const pages = document.querySelectorAll('.page');
-    pages.forEach(page => page.classList.remove('active'));
-    
-    // Show selected page
-    document.getElementById(pageId).classList.add('active');
-    
-    // Update active nav link
-    const navLinks = document.querySelectorAll('.nav-link');
-    navLinks.forEach(link => link.classList.remove('active'));
-    
-    // Find and activate the correct nav link
-    const activeLink = document.querySelector(`[href="#${pageId}"]`);
-    if (activeLink) {
-        activeLink.classList.add('active');
+        // Hide all pages
+        const pages = document.querySelectorAll('.page');
+        pages.forEach(page => page.classList.remove('active'));
+        
+        // Show selected page
+        document.getElementById(pageId).classList.add('active');
+        
+        // Update active nav link
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => link.classList.remove('active'));
+        
+        // Find and activate the correct nav link
+        const activeLink = document.querySelector(`[onclick="showPage('${pageId}')"]`);
+        if (activeLink) {
+            activeLink.classList.add('active');
+        }
+        
+        // Close mobile menu if open
+        document.querySelector('.nav-links').classList.remove('active');
     }
-    
-    // Update URL hash
-    window.history.replaceState(null, null, `#${pageId}`);
-    
-    // Close mobile menu if open
-    document.querySelector('.nav-links').classList.remove('active');
-}
 
-// Handle browser back/forward buttons and direct URL access
-window.addEventListener('hashchange', function() {
-    const hash = window.location.hash.replace('#', '') || 'home';
-    showPage(hash);
-});
+    function toggleMenu() {
+        document.querySelector('.nav-links').classList.toggle('active');
+    }
 
-// Load correct page on initial visit
-window.addEventListener('load', function() {
-    const hash = window.location.hash.replace('#', '') || 'home';
-    showPage(hash);
-});
-
-        function toggleMenu() {
-            document.querySelector('.nav-links').classList.toggle('active');
-        }
-
-        // Add smooth scrolling animation when elements come into view
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        // Apply animation to cards
-        document.querySelectorAll('.service-card, .benefit-item, .feature-card, .value-item').forEach(card => {
-            card.style.opacity = '0';
-            card.style.transform = 'translateY(20px)';
-            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(card);
-        });
-
-        // Contact form submission
-        function submitForm(event) {
-            event.preventDefault();
-            
-            // Get form data
-            const formData = new FormData(event.target);
-            const name = formData.get('name');
-            const email = formData.get('email');
-            const phone = formData.get('phone');
-            const message = formData.get('message');
-            
-            // Show success message
-            document.getElementById('successMessage').style.display = 'block';
-            
-            // Reset form
-            event.target.reset();
-            
-            // Scroll to success message
-            document.getElementById('successMessage').scrollIntoView({ behavior: 'smooth' });
-            
-            // Hide success message after 5 seconds
-            setTimeout(() => {
-                document.getElementById('successMessage').style.display = 'none';
-            }, 5000);
-        }
-
-        // Add hover effects for interactive elements
-        document.querySelectorAll('.service-card, .feature-card').forEach(card => {
-            card.addEventListener('mouseenter', () => {
-                card.style.transform = 'translateY(-10px) scale(1.02)';
-            });
-            
-            card.addEventListener('mouseleave', () => {
-                card.style.transform = 'translateY(0) scale(1)';
-            });
-        });
-
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', (e) => {
-            const navbar = document.querySelector('.navbar');
-            const navLinks = document.querySelector('.nav-links');
-            if (!navbar.contains(e.target)) {
-                navLinks.classList.remove('active');
-            }
-        });
+    // Contact form submission
+    function submitForm(event) {
+        event.preventDefault();
+        
+        // Show success message
+        document.getElementById('successMessage').style.display = 'block';
+        
+        // Reset form
+        event.target.reset();
+        
+        // Hide success message after 5 seconds
+        setTimeout(() => {
+            document.getElementById('successMessage').style.display = 'none';
+        }, 5000);
+    }
 </script>
-       
-    </script>
 </body>
 </html>
